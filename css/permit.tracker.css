@@ -1,1 +1,62 @@
-#alert-info {display: none;}
+html {
+    padding-top: 40px;
+}
+
+.alert {
+    border-color: #eee;
+}
+
+.back {
+    margin-top: 40px;
+}
+
+.back a {
+    color: #656565;
+    font-size: 0.8em
+}
+
+.choice {
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    display: inline-block;
+    padding: 10px;
+    height: 150px;
+}
+
+.choice .glyphicon {
+    text-align: center;
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.learn-more {
+    font-size:0.8em;
+    display: block;
+}
+
+.progress-bar-danger, .progress-bar-info, .progress-bar-success, .progress-bar-warning {
+    color: #ffffff;
+    text-align: center;
+}
+
+.start-form {
+    margin: 0 auto;
+    padding: 10px;
+    width: 500px;
+    background: #fafafa;
+    border-radius: 3px;
+}
+
+.start-form img {
+    width: 480px;
+}
+
+.submitted-on {
+    font-size: 0.8em;
+}
+
+#alert-info {display: none; text-align: center;}
+
+#contact-info {
+    text-align: center;
+}

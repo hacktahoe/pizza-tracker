@@ -1,112 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TRPA Permit Tracker</title>
+        <title>TRPA Permit Tracker</title>
 
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/permit.tracker.css" rel="stylesheet">
 
-    <style>
-        .progress-bar-warning {
-            background-color: #f0ad4e;
-            color: #ffffff;
-        }
+        <style>
+            .progress-bar-success {
+                color: #ffffff;
+            }
 
-        .progress-bar-info {
-            color: #ffffff;
-        }
+            .alert {
+                border-color: #eee;
+            }
 
-        .progress-bar-success {
-            color: #ffffff;
-        }
+            #alert-info {
+                display: none;
+            }
 
-        .alert {
-            border-color: #eee;
-        }
+            #contact-info {
+                text-align: center;
+            }
+        </style>
 
-        #alert-info {
-            display: none;
-        }
-
-        #contact-info {
-            text-align: center;
-        }
-    </style>
-
-</head>
-<body>
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">TRPA Permit Tracker</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a href="index.html">Submitted</a></li>
-            <li class="active"><a href="precheck.html">Pre-Check</a></li>
-            <li><a href="review.html">Review</a></li>
-            <li><a href="permit.html">Cond. Permit</a></li>
-            <li><a href="inspection.html">Inspection</a></li>
-            <li><a href="complete.html">Complete</a></li>
-        </ul>
-    </div>
-</nav>
-<div class="container">
-    <div class="jumbotron row">
-        <div class="col-md-2 alert progress-bar-success">
-            <h3>Application Submitted</h3>
-        </div>
-        <div id="tracker" class="col-md-2 alert progress-bar-warning">
-            <h3>Pre-Review Check</h3>
-        </div>
-        <div class="col-md-2 alert progress-bar-info">
-            <h3>Permit Review</h3>
-        </div>
-        <div class="col-md-2 alert progress-bar-info">
-            <h3>Conditional Permit</h3>
-        </div>
-        <div class="col-md-2 alert progress-bar-info">
-            <h3>Permit Inspection</h3>
-        </div>
-        <div class="col-md-2 alert progress-bar-info">
-            <h3>Permit Complete</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div id="contact-info" class="col-md-8">
-            <h1>Questions?</h1>
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
-                    <p>Contact: <strong>Hal Cole</strong><br>(530) 318-1111<br>halcole@charter.net</p>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">TRPA Permit Tracker</a>
                 </div>
-                <div class="col-md-3">
-                    <p>Mailing Address:<br>P.O. Box 9242<br>South Lake Tahoe, CA 96158</p>
-                </div>
-                <div class="col-md-3"></div>
+                <ul class="nav navbar-nav">
+                    <li><a href="status.html">Submitted</a></li>
+                    <li class="active"><a href="precheck.html">Pre-Check</a></li>
+                    <li><a href="review.html">Review</a></li>
+                    <li><a href="permit.html">Cond. Permit</a></li>
+                    <li><a href="inspection.html">Inspection</a></li>
+                    <li><a href="complete.html">Complete</a></li>
+                </ul>
             </div>
-        </div>
-        <div id="alert-info" class="col-md-8 alert alert-danger">
-            <h1><strong>ALERT!</strong></h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Contact: <strong>Hal Cole</strong><br>(530) 318-1111<br>halcole@charter.net</p>
+        </nav>
+        <div class="container">
+            <div class="jumbotron row">
+                <div class="col-md-2 alert progress-bar-success">
+                    <h3>Application Submitted</h3>
                 </div>
-                <div class="col-md-6">
-                    <h3>PERMIT PROBLEM!<br>Contact TRPA.</h3>
+                <div id="tracker" class="col-md-2 alert progress-bar-warning">
+                    <h3>Application Check</h3>
+                </div>
+                <div class="col-md-2 alert progress-bar-info">
+                    <h3>Permit Review</h3>
+                </div>
+                <div class="col-md-2 alert progress-bar-info">
+                    <h3>Conditional Permit</h3>
+                </div>
+                <div class="col-md-2 alert progress-bar-info">
+                    <h3>Permit Inspection</h3>
+                </div>
+                <div class="col-md-2 alert progress-bar-info">
+                    <h3>Permit Complete</h3>
                 </div>
             </div>
+            <div id="contact-info">
+                <h1>Questions?</h1>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <p>Contact: <strong>Hal Cole</strong><br>(530) 318-1111<br>halcole@charter.net</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Mailing Address:<br>P.O. Box 9242<br>South Lake Tahoe, CA 96158</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+            <div id="alert-info" class="alert alert-danger">
+                <h1><strong>ALERT!</strong></h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Contact: <strong>Hal Cole</strong><br>(530) 318-1111<br>halcole@charter.net</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>PERMITTING PROBLEM!</strong><br>Please contact the TRPA listed staff member immediately.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="status.html" class="btn btn-primary btn-lg" role="button">Back</a>
+                <a href="review.html" class="btn btn-primary btn-lg" role="button">Next</a>
+                <button id="alert-button" class="btn btn-danger btn-lg" role="button">Alert</button>
+            </div>
         </div>
-        <div class="col-md-4">
-            <a href="review.html" class="btn btn-primary btn-lg" role="button">Next</a>
-            <button id="alert-button" class="btn btn-danger btn-lg" role="button">Alert</button>
-        </div>
-    </div>
-</div>
-<script src="js/alert.js"></script>
-</body>
+        <script src="js/alert.js"></script>
+    </body>
 </html>
