@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TRPA Permit Tracker</title>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .progress-bar-warning {
+            background-color: #f0ad4e;
+            color: #ffffff;
+        }
+
+        .progress-bar-info {
+            color: #ffffff;
+        }
+
+        .alert {
+            border-color: #eee;
+        }
+        #contact-info {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">TRPA Permit Tracker</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Submitted</a></li>
+                <li><a href="precheck.html">Pre-Check</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="#permit.html">Cond. Permit</a></li>
+                <li><a href="inspection.html">Inspection</a></li>
+                <li><a href="complete.html">Complete</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron row">
+            <div id="tracker" class="col-md-2 alert progress-bar-warning">
+                <h3>Application Submitted</h3>
+            </div>
+            <div class="col-md-2 alert progress-bar-info">
+                <h3>Pre-Review Check</h3>
+            </div>
+            <div class="col-md-2 alert progress-bar-info">
+                <h3>Permit Review</h3>
+            </div>
+            <div class="col-md-2 alert progress-bar-info">
+                <h3>Conditional Permit</h3>
+            </div>
+            <div class="col-md-2 alert progress-bar-info">
+                <h3>Permit Inspection</h3>
+            </div>
+            <div class="col-md-2 alert progress-bar-info">
+                <h3>Permit Complete</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div id="contact-info" class="col-md-8">
+                <h1>Questions?</h1>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <p>Contact: <strong>Hal Cole</strong><br>(530) 318-1111<br>halcole@charter.net</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Mailing Address:<br>P.O. Box 9242<br>South Lake Tahoe, CA 96158</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="precheck.html" class="btn btn-primary btn-lg" role="button">Next</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/alert.js"></script>
+</body>
+</html>
