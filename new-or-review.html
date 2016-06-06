@@ -22,6 +22,34 @@
         background: #fafafa;
         border-radius: 3px;
       }
+
+      .start-form img {
+        width: 480px;
+      }
+
+      .back {
+        margin-top: 40px;
+      }
+
+      .back a {
+        color: #656565;
+        font-size: 0.8em
+      }
+
+      .choice {
+        text-align: center;
+        border: 1px solid #cdcdcd;
+        display: inline-block;
+        padding: 10px;
+        height: 150px;
+      }
+
+      .choice .glyphicon {
+        text-align: center;
+        font-size: 48px;
+        margin: 10px 0;
+      }
+
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -37,36 +65,31 @@
       <div class="start-form">
         <form>
           <fieldset>
-            <legend>Start with your address</legend>
-          
-            <div class="form-group">
-              <label for="address1">Address Line 1</label>
-              <input type="text" class="form-control" id="address1" placeholder="Address 1">
-            </div>
-            <div class="form-group">
-              <label for="address2">Address Line 2</label>
-              <input type="text" class="form-control" id="address2" placeholder="Address 2">
-            </div>
-            <div class="form-group">
-              <label for="city">City</label>
-              <input type="text" class="form-control" id="city" placeholder="South Lake Tahoe">
-            </div>
+            <legend>What would you like to do?</legend>
+          </fieldset>
 
-            <div class="form-group">
-              <label>State</label>
-              <select class="form-control">
-                <option>California</option>
-                <option>Nevada</option>
-              </select>
+          <div class="row">
+            <div class="col-md-6">
+              <a class="choice" href="submit-new.html" class="">
+                <span class="glyphicon glyphicon-send" aria-hidden="true"></span><br/>
+                Submit a new permit application
+              </a>
             </div>
+            <div class="col-md-6">
+              <a class="choice" href="choose-permit.html" class="">
+                <span class="glyphicon glyphicon-saved" aria-hidden="true"></span><br/>
+                Check status of existing permit application
+              </a>
+            </div>
+          </div>
 
-            </fieldset>
+          <div class="back">
+            <a href="start.html" class="">Or change address</a>
+          </div>
 
-            <!-- <button type="submit" class="btn btn-block btn-primary">Next</button> -->
-            <a href="confirm-address.html" class="btn btn-block btn-primary">Next</a>
         </form>
       </div>
-
+    
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -22,6 +22,11 @@
         background: #fafafa;
         border-radius: 3px;
       }
+
+      .start-form img {
+        width: 480px;
+      }
+
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -37,36 +42,24 @@
       <div class="start-form">
         <form>
           <fieldset>
-            <legend>Start with your address</legend>
-          
+            <legend>Is this address correct?</legend>
             <div class="form-group">
-              <label for="address1">Address Line 1</label>
-              <input type="text" class="form-control" id="address1" placeholder="Address 1">
+              <img src="img/panther.jpg"/>
             </div>
-            <div class="form-group">
-              <label for="address2">Address Line 2</label>
-              <input type="text" class="form-control" id="address2" placeholder="Address 2">
-            </div>
-            <div class="form-group">
-              <label for="city">City</label>
-              <input type="text" class="form-control" id="city" placeholder="South Lake Tahoe">
-            </div>
+          </fieldset>
 
-            <div class="form-group">
-              <label>State</label>
-              <select class="form-control">
-                <option>California</option>
-                <option>Nevada</option>
-              </select>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="start.html" class="btn btn-block btn-default">Change Address</a>
             </div>
+            <div class="col-md-6">
+              <a href="new-or-review.html" class="btn btn-block btn-primary">Yes, Next</a>
+            </div>
+          </div>
 
-            </fieldset>
-
-            <!-- <button type="submit" class="btn btn-block btn-primary">Next</button> -->
-            <a href="confirm-address.html" class="btn btn-block btn-primary">Next</a>
         </form>
       </div>
-
+    
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
