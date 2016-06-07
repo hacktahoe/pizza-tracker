@@ -34,6 +34,10 @@ html {
     display: block;
 }
 
+.panel-heading, .panel-body {
+    text-align: center;
+}
+
 .progress-bar-danger, .progress-bar-info, .progress-bar-success, .progress-bar-warning {
     color: #ffffff;
     text-align: center;

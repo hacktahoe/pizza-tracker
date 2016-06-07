@@ -6,9 +6,6 @@
 
         <title>TRPA Permit Tracker</title>
 
-        <script src="js/jquery-1.12.4.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/permit.tracker.css" rel="stylesheet">
     </head>
@@ -18,14 +15,6 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">TRPA Permit Tracker</a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="status.html">Submitted</a></li>
-                    <li><a href="precheck.html">Pre-Check</a></li>
-                    <li><a href="review.html">Review</a></li>
-                    <li><a href="permit.html">Cond. Permit</a></li>
-                    <li class="active"><a href="inspection.html">Inspection</a></li>
-                    <li><a href="complete.html">Complete</a></li>
-                </ul>
             </div>
         </nav>
         <div class="container">
@@ -49,28 +38,44 @@
                     <h3>Permit Complete</h3>
                 </div>
             </div>
-            <div id="contact-info">
-                <h1>Questions?</h1>
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3">
-                        <p>Contact: <strong>Hal Cole</strong><br>(530) 318-1111<br>halcole@charter.net</p>
+            <div id="info-panel" class="panel panel-warning">
+                <div id="panel-title" class="panel-heading"></div>
+                <div id="contact-info" class="panel-body">
+                    <h1>Questions?</h1>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                            <h4>Contact:</h4>
+                            <p id="contact-name"></p>
+                            <p id="contact-dept"></p>
+                            <p id="contact-phone"></p>
+                            <p id="contact-email"></p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Mailing Address:</h4>
+                            <p>P.O. Box 5301<br>Stateline, NV 89449</p>
+                        </div>
+                        <div class="col-md-3"></div>
                     </div>
-                    <div class="col-md-3">
-                        <p>Mailing Address:<br>P.O. Box 9242<br>South Lake Tahoe, CA 96158</p>
-                    </div>
-                    <div class="col-md-3"></div>
                 </div>
             </div>
-            <div id="alert-info" class="alert alert-danger">
-                <h1><strong>ALERT!</strong></h1>
+            <div id="alert-info" class="panel-body">
+                <h1><strong>Plan revision has been submitted.</strong></h1>
+                <p>Please refer to file number ERSP2016-xx.</p>
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>Contact: <strong>Hal Cole</strong><br>(530) 318-1111<br>halcole@charter.net</p>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <h4>Contact:</h4>
+                        <p id="alert-name"></p>
+                        <p id="alert-dept"></p>
+                        <p id="alert-phone"></p>
+                        <p id="alert-email"></p>
                     </div>
-                    <div class="col-md-6">
-                        <p><strong>PERMITTING PROBLEM!</strong><br>Please contact the TRPA listed staff member immediately.</p>
+                    <div class="col-md-3">
+                        <h4>Mailing Address:</h4>
+                        <p>P.O. Box 5301<br>Stateline, NV 89449</p>
                     </div>
+                    <div class="col-md-3"></div>
                 </div>
             </div>
             <div>
@@ -79,6 +84,12 @@
                 <button id="alert-button" class="btn btn-danger btn-lg" role="button">Alert</button>
             </div>
         </div>
+        <script type="text/javascript">
+            const tracker = 4;
+        </script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/State.js"></script>
         <script src="js/alert.js"></script>
     </body>
 </html>
