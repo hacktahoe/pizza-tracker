@@ -34,6 +34,16 @@ html {
     display: block;
 }
 
+.container > .progress-meter {
+    text-align: center;
+}
+
+.progress-meter li {
+    display: inline-block;
+    text-align: center;
+}
+
+
 .panel-heading, .panel-body {
     text-align: center;
 }
@@ -61,6 +71,14 @@ html {
 
 #alert-info {display: none; text-align: center;}
 
+#alert-button, #back-button {
+    display: none;
+}
+
 #contact-info {
     text-align: center;
+}
+
+#progress-bar {
+    min-width: 2em;
 }

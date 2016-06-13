@@ -1,8 +1,24 @@
-$("#panel-title").html("<h3>" + projects[0][tracker].message + "</h3>");
-$("#contact-name").html(projects[0][tracker].contact.name);
-$("#contact-dept").html(projects[0][tracker].contact.dept);
-$("#contact-phone").html(projects[0][tracker].contact.phone);
-$("#contact-email").html(projects[0][tracker].contact.email);
+let tracker = 0;
+
+function currentStatus() {
+    $("#panel-title").html("<h3>" + projects[0][tracker].message + "</h3>");
+    $("#contact-name").html(projects[0][tracker].contact.name);
+    $("#contact-dept").html(projects[0][tracker].contact.dept);
+    $("#contact-phone").html(projects[0][tracker].contact.phone);
+    $("#contact-email").html(projects[0][tracker].contact.email);
+}
+
+currentStatus();
+
+$("#next-button").click(function () {
+    tracker++;
+    currentStatus();
+});
+
+$("#back-button").click(function () {
+    tracker--;
+    currentStatus();
+});
 
 /*
     Adjusts the permit tracker and display panel if an alert is triggered
@@ -10,6 +26,8 @@ $("#contact-email").html(projects[0][tracker].contact.email);
 $("#alert-button").click(function() {
     $("#contact-info").hide();
     $("#alert-info").show();
+    $("#tracker").removeClass("progress-bar-warning");
+    $("#tracker").addClass("progress-bar-danger");
     $("#info-panel").removeClass("panel-warning");
     $("#info-panel").addClass("panel-danger");
     $("#panel-title").html("<h1><strong>ALERT!</strong></h1>")
@@ -17,6 +35,4 @@ $("#alert-button").click(function() {
     $("#alert-dept").html(projects[0][tracker].contact.dept);
     $("#alert-phone").html(projects[0][tracker].contact.phone);
     $("#alert-email").html(projects[0][tracker].contact.email);
-    $("#tracker").removeClass("progress-bar-warning");
-    $("#tracker").addClass("progress-bar-danger");
 });
