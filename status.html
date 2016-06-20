@@ -23,19 +23,21 @@
                     0%
                 </div>
             </div>
-                <ol class="progress-meter">
-                    <li class="app-received alert progress-bar-default"><p>Application Received</p></li>
-                    <li class="app-assigned alert progress-bar-default"><p>Planner Assigned</p></li>
-                    <li class="app-review alert progress-bar-default"><p>Application Review</p></li>
-                    <li class="status-tracker alert progress-bar-default"><p>Conditional Permit Issued</p></li>
-                    <li class="status-tracker alert progress-bar-default"><p>Final Permit Issued</p></li>
-                    <li class="status-tracker alert progress-bar-default"><p>Final Inspection</p></li>
-                    <li class="status-tracker alert progress-bar-default"><p>Permit Complete</p></li>
-                </ol>
+            <div class="progress-meter">
+                <ul>
+                    <li id="app-received" class="alert progress-bar-warning"></li>
+                    <li id="app-assigned" class="alert progress-bar-info"></li>
+                    <li id="app-review" class="alert progress-bar-info"></li>
+                    <li id="permit-cond" class="alert progress-bar-info"></li>
+                    <li id="permit-issued" class="alert progress-bar-info"></li>
+                    <li id="permit-inspect" class="alert progress-bar-info"></li>
+                    <li id="permit-complete" class="alert progress-bar-info"></li>
+                </ul>
             </div>
             <div class="panel panel-warning">
                 <div id="panel-title" class="panel-heading"></div>
                 <div class="panel-body">
+                    <h4 id="panel-message"></h4>
                     <h1>Questions?</h1>
                     <div class="row">
                         <div class="col-md-3"></div>

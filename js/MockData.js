@@ -79,12 +79,12 @@ function createProjects() {
     // 
     function setupStatus() { 
         let status = [];
-        status[eState.RECEIVED] = 'Application Received.';                          
-        status[eState.ASSIGNED] = 'Planner Assigned.';
-        status[eState.REVIEW] = 'In Review.';                          
-        status[eState.CONDITIONAL] = 'Conditional Permit Issued.';                          
-        status[eState.APPROVAL] = 'Final Permit Approval.';                          
-        status[eState.INSPECTION] = 'Final Inspection.';                          
+        status[eState.RECEIVED] = 'Application Received';
+        status[eState.ASSIGNED] = 'Planner Assigned';
+        status[eState.REVIEW] = 'Application Review';
+        status[eState.CONDITIONAL] = 'Conditional Permit Issued';
+        status[eState.APPROVAL] = 'Final Permit Approval';
+        status[eState.INSPECTION] = 'Final Inspection';
         status[eState.DONE] = 'Complete.'; 
         
         return status;     

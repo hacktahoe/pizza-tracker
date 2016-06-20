@@ -38,11 +38,17 @@ html {
     text-align: center;
 }
 
-.progress-meter li {
-    display: inline-block;
+.progress-meter {
     text-align: center;
 }
 
+.progress-meter li {
+    display: inline-block;
+}
+
+.progress-meter ul {
+    padding: 0px 0px;
+}
 
 .panel-heading, .panel-body {
     text-align: center;
@@ -69,7 +75,10 @@ html {
     font-size: 0.8em;
 }
 
-#alert-info {display: none; text-align: center;}
+#alert-info {
+    display: none;
+    text-align: center;
+}
 
 #alert-button, #back-button {
     display: none;
